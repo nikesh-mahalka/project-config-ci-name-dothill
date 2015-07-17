@@ -18,16 +18,16 @@ pipelines:
         - event: patchset-created
           branch: master
         #- event: change-restored
-         # branch: master
+         # branch: master 
         #- event: comment-added
          # branch: master
           #username: jenkins
-        #- event: comment-added
-         # branch: master
+       # - event: comment-added
+        #  branch: master
          # comment: (?i)^(Patch Set [0-9]+:)?( [\w\\+-]*)*(\n\n)?\s*recheck(( (?:bug|lp)[\s#:]*(\d+))|( no bug))\s*$
         #- event: comment-added
          # branch: master
-         # comment: (?i)^(Patch Set [0-9]+:)?( [\w\\+-]*)*(\n\n)?\s*recheck(( (?:bug|lp)[\s#:]*(\d+))|( HPMSA))\s*$
+          #comment: (?i)^(Patch Set [0-9]+:)?( [\w\\+-]*)*(\n\n)?\s*recheck(( (?:bug|lp)[\s#:]*(\d+))|( DotHill))\s*$
     success:
       gerrit:
         verified: 1
@@ -65,5 +65,5 @@ projects:
       #- noop-check-communication
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
-      - vedams-hpmsa-dsvm-tempest-full-iscsi
-      - vedams-hpmsa-dsvm-tempest-full-fc
+      - vedams-dothill-dsvm-tempest-full-iscsi
+      - vedams-dothill-dsvm-tempest-full-fc
